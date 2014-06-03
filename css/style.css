@@ -6,6 +6,11 @@ body {
 body.slide-active {
     overflow-x: hidden
 }
+
+.container{
+	width: 1280px;
+	padding: 0;
+}
 /*first child of #page-content so it doesn't shift around*/
 .no-margin-top {
     margin-top: 0px!important
@@ -13,7 +18,7 @@ body.slide-active {
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
 #page-content {
     position: relative;
-    padding-top: 220px;
+    padding-top: 189px;
     left: 0;
 }
 #page-content.slide-active {
@@ -50,6 +55,8 @@ body.slide-active {
 .navbar.navbar-fixed-top.slide-active {
     position: relative
 }
+
+
 /*Custom CSS*/
 /*---------------------------------------------------*/
 .navbar-fixed-top {
@@ -60,14 +67,30 @@ body.slide-active {
 	color: #888;
 	text-transform: uppercase;
 }
+.navbar-fixed-top ul.navbar-nav > li a:hover{
+	color: #BB0922;
+}
+.navbar-fixed-top ul.navbar-nav > li a:hover,
+.navbar-fixed-top ul.navbar-nav > li a:active,
+.navbar-fixed-top ul.navbar-nav > li a:focus {
+	background: none;
+}
 .navbar-brand {
 	margin: 62px 0 0 66px;
 	height: auto;
+	padding: 0 15px 0;
 }
 .dropdown-menu {
-	background: #f2f2f2
+	background: #f2f2f2;
+	border: none;
+}
+.dropdown-menu > li > a{
+	padding: 5px 25px;
 }
 /*---------------------------------------------------*/
+
+
+
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width:767px) { 
 	#slide-nav .container {
@@ -136,4 +159,15 @@ body.slide-active {
 	.navbar-header {
 	    left: 0!important
 	}
+	.navbar-nav {
+		margin: 125px 0 0 270px;
+	}
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
