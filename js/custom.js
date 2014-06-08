@@ -1,54 +1,83 @@
 $(document).ready(function () {
 
-  //stick in the fixed 100% height behind the navbar but don't wrap it
-  $('#slide-nav.navbar .container').append($('<div id="navbar-height-col"></div>'));
+  function is_mobile(){
+    return $(window).width() < 1024;
+  }
 
-  // Enter your ids or classes
-  var toggler = '.navbar-toggle';
-  var pagewrapper = '#page-content';
-  var navigationwrapper = '.navbar-header';
-  var menuwidth = '100%'; // the menu inside the slide menu itself
-  var slidewidth = '30%';
-  var menuneg = '-100%';
-  var slideneg = '-40%';
+  function is_tablet(){
+    return (($(window).width() > 1023) && ($(window).width() < 1280));
+  }
 
-  $("#slide-nav").on("click", toggler, function (e) {
+  function is_desktop(){
+    return $(window).width() > 1279;
+  }
 
-    var selected = $(this).hasClass('slide-active');
-
-    $('#slidemenu').stop().animate({
-      left: selected ? menuneg : '0px'
-    });
-
-    $('#navbar-height-col').stop().animate({
-      left: selected ? slideneg : '0px'
-    });
-
-    $(pagewrapper).stop().animate({
-      left: selected ? '0px' : slidewidth
-    });
-
-    $(navigationwrapper).stop().animate({
-      left: selected ? '0px' : slidewidth
-    });
-
-
-    $(this).toggleClass('slide-active', !selected);
-    $('#slidemenu').toggleClass('slide-active');
-
-
-    $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
-
-  });
-
-  var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
-
-  $(window).on("resize", function () {
-
-    if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
-      $(selected).removeClass('slide-active');
+  $('.navbar-toggle').sidr({
+    name: 'sidr-main',
+    source: '#slidemenu',
+    onOpen: function(){
+      $('.navbar-fixed-top').animate({left: ($(window).width < 610 ) ? "369px" : "512px" }, 200);
+    },
+    onClose: function(){
+      $('.navbar-fixed-top').animate({left: "0"}, 200);
     }
-
   });
 
+  $('.overlay').click(function(){
+    $.sidr('close', 'sidr-main');
+  });
+
+  $('.sidr a').click(function(){
+    $.sidr('close', 'sidr-main');
+  });
+
+  $('#page-content, .navbar-brand').click(function(){
+    if ($('.page-content-overlay').is(':visible'))
+      $('.page-content-overlay').hide();
+  });
+
+  $('.dropdown').click(function(){
+    if ($('.page-content-overlay').is(':visible'))
+      $('.page-content-overlay').hide();
+    else
+      $('.page-content-overlay').show();
+  });
+
+  url_hash = ($(location).attr('hash')) ? $(location).attr('hash') : '#home';
+  $('.navbar-nav li').removeClass('active');
+  $('.navbar a[href$="' + url_hash + '"]').parent('li').addClass('active'); 
+
+  // Scroll
+  $('a[href*=#]').bind("click", function(e){
+      // $('.page-content-overlay').hide();
+      var anchor = $(this);
+      $('html, body').stop().animate({
+         scrollTop: $(anchor.attr('href')).offset().top - $('.navbar-fixed-top').height()
+      }, 1000);
+      e.preventDefault();
+  });
+
+  $('.sidr-class-dropdown-menu li a').click(function(){
+    if (!is_desktop()) {
+      var type_bike = $(this).text();
+      console.log(type_bike);
+      $('.navbar-header h2').text(type_bike);
+    };
+  });
+
+  // $(window).scroll(function(){
+  //     $(".page").each(function () {
+  //       var window_top = $(window).scrollTop();
+  //       var page_top = $(this).offset().top;
+  //       var page_1 = $(this).attr('id');
+  //         if (window_top > page_top - 120){
+  //             $('.navbar-nav').find('li').removeClass('active');
+  //             $('.navbar-nav').find('li a[class="'+page_1+'"]').addClass('active');
+  //         }
+  //         else{
+  //             $('.navbar-nav').find('li[class="'+page_1+'"]').removeClass('active');
+  //             };
+  //     });
+  // });
+  
 });
