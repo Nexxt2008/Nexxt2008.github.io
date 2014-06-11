@@ -348,7 +348,9 @@ body.sidr-open .overlay{
     width: 100%;
     margin: 34px 0;
 }
-
+.bike-block {
+    min-height: 528px;
+}
 .bike-block .text-content{
     padding: 0 35px;
 }
@@ -367,12 +369,36 @@ body.sidr-open .overlay{
     font-size: 1.4em;
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 
+.bike-block.descr{
+    padding: 0;
+    display: block;
+    background: none;
+}
+.bike-block .description p{
+    font-size: 2.6em;
+    line-height: 1.2em;
+    padding: 0 100px 0 40px;
+}
 
+.bike-block .description{
+    display: block;
+}
 
-
-
+.bike-block.desktop-img {
+    padding: 12px;
+}
+.bike-block.top-right-corner{
+    background: url(../images/corner_top_right.png) top right no-repeat;        
+}
+.bike-block.top-left-corner{
+    background: url(../images/corner_top_left.png) top left no-repeat;        
+}
+.bike-block.desktop-img img{
+    width: 100%;
+}
 /* Media queries */
 /*---------------------------------------------------*/
 @media (min-width:610px) { 
@@ -492,6 +518,21 @@ body.sidr-open .overlay{
     .preview img {
         margin: 80px 0;
     }
+    .bike-block.descr{
+        padding: 0;
+        display: block;
+        background: none;
+    }
+    .bike-block .description p{
+        font-size: 4em;
+        line-height: 1.2em;
+        padding: 0 115px;
+    }
+
+    .bike-block .description{
+        display: block;
+    }
+
     .bike-block .text-content{
         padding: 0 250px 0 110px;
     }
@@ -649,6 +690,27 @@ body.sidr-open .overlay{
     .bike-block .byke-types{
         color: #888;
         padding: 0 30px;
+    }
+    .bike-block.descr{
+        padding: 0;
+        display: table;
+        background: none;
+    }
+    .bike-block .description p{
+        font-size: 1.6em;
+        line-height: 1.2em;
+        padding: 0 30px;
+    }
+    .bike-block .description.left-line p{
+        border-left: 4px solid #bb0922;
+    }
+    .bike-block .description.right-line p{
+        border-right: 4px solid #bb0922;
+        text-align: right;    
+    }
+    .bike-block .description{
+        display: table-cell;
+        vertical-align: middle;
     }
     h2.type-head{
         background: #f2f2f2;
