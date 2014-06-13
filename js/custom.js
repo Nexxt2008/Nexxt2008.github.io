@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
   function is_mobile(){
-    return $(window).width() < 1024;
+    return $(window).width() < 768;
   }
 
   function is_tablet(){
-    return (($(window).width() > 1023) && ($(window).width() < 1280));
+    return (($(window).width() > 768) && ($(window).width() < 992));
   }
 
   function is_desktop(){
-    return $(window).width() > 1279;
+    return $(window).width() > 992;
   }
 
   $('.navbar-toggle').sidr({

@@ -35,7 +35,9 @@ body.sidr-open .overlay{
 }
 #page-content {
     padding: 57px 0 0 0;
-    min-width: 610px;
+    /*min-width: 610px;*/
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 #page-content .container {
@@ -44,7 +46,8 @@ body.sidr-open .overlay{
 
 .container {
     padding: 0;
-    min-width: 610px;
+    /*min-width: 610px;*/
+    width: 100%;
 }
 
 .red{
@@ -399,6 +402,42 @@ body.sidr-open .overlay{
 .bike-block.desktop-img img{
     width: 100%;
 }
+
+/* News block */
+/*---------------------------------------------------*/
+.type-head.news-head {
+    margin-left: 0;
+}
+
+.news-block{
+    width: 760px;
+    border-radius: 7px;
+    background: #f2f2f2;
+    padding: 14px;
+    
+}
+.news-block img{
+    width: 100%;
+}
+
+.news-preview{
+    position: relative;
+}
+.discount {
+    position: absolute;
+    top: 0;
+    right: -120px;
+    color: #fff;
+    font-size: 3.5em;
+    background-color: rgba(187, 9, 34, 0.8);
+    border-radius: 7px;
+    height: 77px;
+    line-height: 77px;
+    padding: 0 25px;
+    letter-spacing: 0.03em;
+}
+
+
 /* Media queries */
 /*---------------------------------------------------*/
 @media (min-width:610px) { 
@@ -422,7 +461,7 @@ body.sidr-open .overlay{
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .home-bg .slogan, .home-bg .link-news {
         font-size: 2em;
     }
@@ -552,7 +591,8 @@ body.sidr-open .overlay{
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
+
     .navbar {
         height: 189px;
     }
@@ -565,6 +605,10 @@ body.sidr-open .overlay{
         font-size: 2.5em;
     }
 
+    .navbar-fixed-top .container{
+        margin: 0 auto;
+        max-width: 1280px;
+    }
     .navbar-fixed-top {
         border-bottom: 5px solid #f2f2f2;
     }
