@@ -1,7 +1,10 @@
+html {
+    font-size: 5px;
+}
 body {
     font-family: Signika;
-    font-size: 18px;
 }
+
 body .overlay{
     display: none;
     width: 100%;
@@ -57,6 +60,10 @@ body.sidr-open .overlay{
 .blue{
     color: #333366;
 }
+
+.grey{
+    color: #888;
+}
 /* Navbar */
 /*---------------------------------------------------*/
 .navbar-fixed-top {
@@ -67,6 +74,7 @@ body.sidr-open .overlay{
     color: #888;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.8rem;
 }
 
 .navbar-fixed-top ul.navbar-nav > li a:hover {
@@ -91,7 +99,7 @@ body.sidr-open .overlay{
 
 .dropdown-menu > li > a {
     padding: 7px 25px;
-    font-size: 1.3em;
+    font-size: 1.8rem;
 }
 
 .nav.navbar-nav {
@@ -133,7 +141,7 @@ body.sidr-open .overlay{
     display: none;
 }
 
-#sidr-main ul li a{
+#sidr-main ul li a, .sidr ul li a{
     font-family: Signika;
     font-weight: bold;
     color: #888;
@@ -148,6 +156,9 @@ body.sidr-open .overlay{
     background: url(../images/arrow_right_mobile.png) 335px center no-repeat;
 
 }
+.sidr.right ul li:not(.ext-link){
+    background: url(../images/arrow_left_mobile.png) 15px center no-repeat;
+}
 
 #sidr-main ul li.sidr-class-dropdown {
     background-position: 335px 14px;
@@ -159,11 +170,34 @@ body.sidr-open .overlay{
     width: 370px;
     
 }
+.sidr.right {
+    text-align: right;
+}
 
 .sidr ul li:hover:not(.sidr-class-side-mail-link)>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span {
     background: url(../images/arrow_right_mobile.png) 335px center no-repeat, #f2f2f2;
 }
 
+.sidr.right ul li:hover:not(.ext-link)>a, .sidr.right ul li:hover>span, .sidr.right ul li.active>a, .sidr.right ul li.active>span, .sidr.right ul li.sidr-class-active>a, .sidr.right ul li.sidr-class-active>span {
+    background: url(../images/arrow_left_mobile.png) 15px center no-repeat, #f2f2f2;
+}
+.sidr.right .ext-link a, .sidr.right .ext-link:hover{
+    background: #fff !important;
+    box-shadow: none !important;
+    color: #0b0433 !important;
+}
+.sidr.right .ext-link a i{
+    float: left;
+    font-size: 2em;
+    line-height: 1.6em;
+}
+.sidr.right .brand-content img{
+    margin: 0 auto;
+    display: block;
+}
+.sidr.right .brand-content .brand-menu ul{
+    margin-bottom: 0;
+}
 .sidr-class-side-mail-link, .sidr-class-side-mail-link:hover, .sidr-class-side-mail-link:hover > a{
     background: #f2f2f2;
 }
@@ -221,11 +255,7 @@ body.sidr-open .overlay{
 }
 
 .home-bg .slogan, .home-bg .link-news {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    width: 50%;
-    font-size: 1.2em;
+    font-size: 2.6rem;
     font-weight: bold;
     color: #0B0433;
     background: #fff;
@@ -234,14 +264,25 @@ body.sidr-open .overlay{
     line-height: 1.2em;
     padding: 0.6em 0.7em;
 }
+.home-text{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+
+}
 
 .home-bg .link-news {
     top: 37%;
-    color: #fff;
     background: #333366;
-    width: 17%;
     left: 50%;
     padding: 0.2em 0.7em;
+    margin-top: 1em;
+    display: inline-block;
+}
+.home-bg .link-news a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .content-logo{
@@ -283,7 +324,7 @@ body.sidr-open .overlay{
 
 .contact-block p, .contact-block h3, .contact-block a {
     text-align: left;
-    padding-left: 75px;
+    padding-left: 12.5rem;
 }
 
 .contact-block:first-child p, .contact-block:first-child h3, .contact-block:first-child a {
@@ -306,13 +347,17 @@ body.sidr-open .overlay{
 
 .contact-block h3 {
     color: #0b0433;
-    font-size: 1.1em;
+    font-size: 3.3rem;
 }
 
 .contact-block p.red{
     color: #cc3355;
     padding-right: 24px;
 }
+.contact-block p, .contact-mail{
+    font-size: 2rem;
+}
+
 
 .contact-mail{
     color: #333366;
@@ -339,14 +384,19 @@ body.sidr-open .overlay{
 }
 
 .text-content h2, .text-content p{
-    font-size: 1.8em;
+    font-size: 5.5rem;
     margin-bottom: 1.8em;
+    color: #888;
 }
 
 
 
 /* Bike block */
 /*---------------------------------------------------*/
+h2.type-head,
+.desktop-img{
+    display: none;
+}
 .preview img {
     width: 100%;
     margin: 34px 0;
@@ -359,17 +409,17 @@ body.sidr-open .overlay{
 }
 
 .bike-block .text-content p{
-    font-size: 1.6em;
+    font-size: 4.6rem;
     color: #888;
+    margin-bottom: 1em;
 }
 
 .bike-block .text-content p.red{
-    font-size: 1.4em;
-
+    font-size: 4rem;
 }
 
 .bike-block a.link-canvas {
-    font-size: 1.4em;
+    font-size: 4rem;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -381,13 +431,21 @@ body.sidr-open .overlay{
     background: none;
 }
 .bike-block .description p{
-    font-size: 2.6em;
+    font-size: 8rem;
     line-height: 1.2em;
     padding: 0 100px 0 40px;
+}
+.description .fa.fa-camera{
+    font-size: 0.7em;
 }
 
 .bike-block .description{
     display: block;
+    color: #888;
+}
+.bike-block .description a{
+    color: #888;
+    text-decoration: none;
 }
 
 .bike-block.desktop-img {
@@ -402,7 +460,9 @@ body.sidr-open .overlay{
 .bike-block.desktop-img img{
     width: 100%;
 }
-
+.text-center.byke-types{
+    display: none;
+}
 /* News block */
 /*---------------------------------------------------*/
 .type-head.news-head {
@@ -410,41 +470,145 @@ body.sidr-open .overlay{
 }
 
 .news-block{
-    width: 760px;
-    border-radius: 7px;
-    background: #f2f2f2;
-    padding: 14px;
-    
+    width: 100%;
+    background: #fff;
+    padding: 14px 0;   
 }
+.news-block:not(:last-child){
+    margin-bottom: 20px;
+
+}
+.news-block p{
+    padding: 0 3rem;
+    font-size: 3.7rem;
+}
+.news-block, .news-block p {
+    font-size: 3.7rem;
+    line-height: 1.2em;
+}
+.news-block p:not(.small) {
+    margin-bottom: 0.8em;
+    color: #888;
+}
+.news-block p.small {
+    font-size: 2.9rem;
+}
+
 .news-block img{
     width: 100%;
+    height: auto;
 }
 
 .news-preview{
     position: relative;
+    margin-bottom: 0.8em;
 }
-.discount {
+
+.news-block .discount {
     position: absolute;
-    top: 0;
-    right: -120px;
     color: #fff;
-    font-size: 3.5em;
+    font-size: 6.5rem;
     background-color: rgba(187, 9, 34, 0.8);
     border-radius: 7px;
-    height: 77px;
-    line-height: 77px;
+    height: 7.7rem;
+    line-height: 7.7rem;
     padding: 0 25px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
+    right: auto;
+    left: 0;
+    top: 50%;
 }
 
+/* Marks */
+/*---------------------------------------------------*/
+.marks-bike, .accessoires-bike , .onderdelen-bike {
+    text-align: center;
+    padding: 0 5%;
+}
+.mark-items{
+    margin: 0 auto;
+}
+.page#mark h3{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    padding: 0 0.5em;
+    position: relative;
+    margin: 1em 0;
+}
+.page#mark .type-head{
+    margin-bottom: 0.4em;
+}
+.page#mark .icon-link{
+    font-size: 2.8rem;
+    color: #333366;
+    background: #f2f2f2;
+    border-radius: 7px;
+    padding: 0 0.3em;
+    margin-left: 0.3em;
+    position: absolute;
+    top: 0;
+    left: 100%;
 
+}
+.bg-blue {
+    background: #333366;
+}
+
+.bg-red {
+    background: #bb0922;
+}
+
+a.mark-item{
+    font-size: 3rem;
+    line-height: 5.8rem;
+    padding: 0 0.5em;
+    border-radius: 7px;
+    float: left;
+    margin: 0.2em 0.3em;
+    background: #f2f2f2;
+    color: #333366;
+    width: 20rem;
+    max-width: 200px;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.red-font .mark-item {
+    color: #cc3355;
+}
+.page#mark .red-font .icon-link{
+    color: #cc3355;    
+}
+.close{
+    margin: 2rem;
+    opacity: 1;
+}
+.sidr-brand{
+    min-height: 100%;
+    position: relative;
+}
+.brand-content{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 /* Media queries */
 /*---------------------------------------------------*/
-@media (min-width:610px) { 
-    .home-bg .slogan, .home-bg .link-news {
-        font-size: 1.2em;
-    }
+@media (min-width:380px) { 
+    html {font-size: 6px;}
 
+}
+@media (min-width:610px) { 
+    html {font-size: 8px;}
+    
+    .home-bg .slogan, .home-bg .link-news {
+        font-size: 3.6rem;
+    }
     .navbar {
         height: 57px;
     }
@@ -459,11 +623,13 @@ body.sidr-open .overlay{
         width: 200px;
     }
 
+
 }
 
 @media (min-width: 768px) {
+    html {font-size: 10px;}
     .home-bg .slogan, .home-bg .link-news {
-        font-size: 2em;
+        font-size: 3.7rem;
     }
 
     .navbar {
@@ -504,7 +670,7 @@ body.sidr-open .overlay{
         top: 264px;
         margin-left: -235px;
     }
-    #sidr-main ul li a{
+    #sidr-main ul li a, .sidr ul li a{
         height: 68px;
         line-height: 68px;
         font-size: 1.5em;
@@ -512,27 +678,28 @@ body.sidr-open .overlay{
     #sidr-main ul li:not(.sidr-class-side-mail-link){
         background: url(../images/arrow_right_tablet.png) 465px center no-repeat;
     }
+    .sidr.right ul li:not(.ext-link){
+        background: url(../images/arrow_left_tablet.png) 15px center no-repeat;
+    }
     #sidr-main ul li.sidr-class-dropdown {
         background-position: 465px 18px;
     }
     .sidr ul li:hover:not(.sidr-class-side-mail-link)>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span {
         background: url(../images/arrow_right_tablet.png) 465px center no-repeat, #f2f2f2;
     }
+    .sidr.right ul li:hover:not(.ext-link)>a, .sidr.right ul li:hover>span, .sidr.right ul li.active>a, .sidr.right ul li.active>span, .sidr.right ul li.sidr-class-active>a, .sidr.right ul li.sidr-class-active>span {
+        background: url(../images/arrow_left_tablet.png) 15px center no-repeat, #f2f2f2;
+    }
+
     .sidr {
         width: 512px;
     }
     .sidr-class-side-logo, .sidr-class-side-logo img{
-        height: 106px;g
+        height: 106px;
     }
 
     .time-head{
         margin: 0 0 0 265px;
-    }
-    .contact-block h3 {
-        font-size: 1.8em;
-    }
-    .contact-block p, .contact-block h3, .contact-block a{
-        padding-left: 115px;
     }
     .time-head {
         margin: 0 0 0 185px;
@@ -549,9 +716,6 @@ body.sidr-open .overlay{
 
     .page .text-content{
         padding: 0 270px 0 100px;    
-    }
-    .text-content h2, .text-content p{
-        font-size: 2.3em;
     }
 
     .preview img {
@@ -575,19 +739,14 @@ body.sidr-open .overlay{
     .bike-block .text-content{
         padding: 0 250px 0 110px;
     }
-    .bike-block .text-content p{
-        font-size: 2em;
-    }
-    .bike-block .text-content p.red{
-        font-size: 1.8em;
-    }
-    .bike-block a.link-canvas {
-        font-size: 1.8em;
-        text-align: center;
-        display: block;
-    }
+
     .navbar-header h2 {
         margin: 21px 0;
+    }
+
+    .news-block .discount{
+        left: 0;
+        top: 10%;
     }
 }
 
@@ -596,7 +755,13 @@ body.sidr-open .overlay{
     .navbar {
         height: 189px;
     }
-
+    .navbar-header h2{
+        display: none;
+    }
+    .text-center.byke-types,
+    .desktop-img{
+        display: block;
+    }
     #page-content {
         padding: 189px 0 0 0;
     }
@@ -617,7 +782,7 @@ body.sidr-open .overlay{
         display: block;
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 45%;
     }
 
     .navbar-header {
@@ -658,14 +823,8 @@ body.sidr-open .overlay{
     .time-head{
         margin: 0 0 0 235px;
     }
-    .contact-block h3 {
-        font-size: 1.6em;
-    }
     .contact-block p, .contact-block h3, .contact-block a{
-        padding-left: 245px;
-    }
-    .contact-block p, .contact-mail{
-        font-size: 1em;
+        padding-left: 24.5rem;
     }
     .contact-block p.red{
         padding-right: 44px;
@@ -690,11 +849,12 @@ body.sidr-open .overlay{
         padding: 0 360px 0 300px;    
     }
     .text-content h2, .text-content p{
-        font-size: 2em;
+        font-size: 3.6rem;
     }
 
+
     .bike-block{
-        width: 370px;
+        width: 31.4%;
         height: 528px;
         padding: 14px;
         margin: 10px;
@@ -702,6 +862,10 @@ body.sidr-open .overlay{
         background: #f2f2f2;
         float: left;
     }
+    .bike-block .text-content p{
+        font-size: 1.8rem;
+    }
+
     .bike-block h3{
         text-align: center;
         margin-top: 0;
@@ -718,22 +882,16 @@ body.sidr-open .overlay{
     .bike-block .text-content{
         padding: 0 42px 0 0;
     }
-    .bike-block .text-content p{
-        font-size: 1em;
-        margin-bottom: 0em;
-    }
-    .bike-block .text-content p.red{
-        font-size: 1em;
-    }
+
+
     .bike-block a.link-canvas {
-        margin-top: 2em;
-        font-size: 1em;
-        text-align: center;
-        display: block;
+        font-size: 1.8rem;
     }
+
     .bike-block .byke-types{
         color: #888;
         padding: 0 30px;
+        font-size: 1.8rem;
     }
     .bike-block.descr{
         padding: 0;
@@ -741,9 +899,12 @@ body.sidr-open .overlay{
         background: none;
     }
     .bike-block .description p{
-        font-size: 1.6em;
+        font-size: 3rem;
         line-height: 1.2em;
         padding: 0 30px;
+    }
+    .bike-block .text-content p.red{
+        font-size: 1.8rem;
     }
     .bike-block .description.left-line p{
         border-left: 4px solid #bb0922;
@@ -760,16 +921,62 @@ body.sidr-open .overlay{
         background: #f2f2f2;
         text-align: center;
         border-radius: 7px;
-        font-size: 1.6em;
+        font-size: 2.8rem;
         color: #0b0433;
         height: 56px;
         line-height: 56px;
-        margin-left: -50px;
         margin-bottom: 36px;
-        width: 1280px;
+        min-width: 100%;
+        display: block;
     }
     .page.type-bike {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    #news .clearfix{
+        background: url(../images/news_corner_top_right.png) top right no-repeat,
+                    url(../images/news_corner_bottom_left.png) bottom left no-repeat;        
+    }
+    .news-block{
+        width: 59%;
+        border-radius: 7px;
+        background: #f2f2f2;
+        padding: 14px;   
+    }
+    .news-block:nth-child(2n+1){
+        float: right;
+    }
+    .news-block:nth-child(2n){
+        float: left;
+    }
+    .news-block .discount{
+        top: 0;
+        left: auto;
+        right: -2em !important;
+    }
+    .news-block:nth-child(2n+1) .discount{
+        top: 0;
+        left: -2em;
+        right: auto !important;   
+    }
+    .news-block, .news-block p {
+        font-size: 3.7rem;
+        line-height: 1.2em;
+    }
+    .news-block p:not(.small) {
+        margin-bottom: 0.8em;
+        padding-right: 30%;
+        color: #888;
+    }
+    .news-block p.small {
+        padding-right: 40%;
+        font-size: 2.9rem;
+    }
+}
+@media (min-width: 1280px) {
+    h2.type-head {
+        width: 1280px;
+        margin-left: -50px;
     }
 }

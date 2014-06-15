@@ -11,11 +11,14 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/jquery.sidr.light.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  
 
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.sidr.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/custom.js"></script>
 
 </head>
@@ -49,10 +52,10 @@
               <li><a href="#hometrainers">Hometrainers</a></li>
             </ul>
           </li>
-          <li><a href="#mark">Merken</a></li>
-          <li><a href="#services">Diensten</a></li>
-          <li><a href="#news">Nieuws</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="main-link" href="#mark">Merken</a></li>
+          <li><a class="main-link" href="#services">Diensten</a></li>
+          <li><a class="main-link" href="#news">Nieuws</a></li>
+          <li><a class="main-link" href="#contact">Contact</a></li>
           <!-- <li class="hidden-lg side-mail-link"><a href="mailto:fietsspecaalzaak@skynet.be">Mail ons</a></li> -->
         </ul>
               
@@ -64,15 +67,17 @@
   <div id="page-content">
     <div class="container" >
       <div class="page-content-overlay"></div>
-      <div id="home" class="page">
+     <div id="home" class="page">
         <div class="content-logo">
           <div class="logo-line"></div>
           <img src="images/tablet/logo1 tablet.png">
         </div>
         <div class="home-bg">
           <img src="images/desktop/tom_desktop.png" class="bg" alt="" />
-          <div class="slogan">Wij garanderen service en kwaliteit voor elk budget!</div>
-          <div class="link-news">Nieuws</div>
+          <div class="home-text">
+            <div class="slogan">Wij garanderen service en kwaliteit voor elk budget!</div>
+            <div class="link-news"><a href="#news">Nieuws</a></div>
+          </div>
         </div>
         <div class="contacts">
           <div class="contact-block">
@@ -114,53 +119,52 @@
       </div>
 
       <div id="racefietsen" class="page type-bike">
-        <h2 class="type-head visible-lg">Racefietsen</h2>
+        <h2 class="type-head">Racefietsen</h2>
         <div class="bike-block descr pull-right">
           <div class="description right-line">
-            <p>Wenst u liver <span class="red">raad bij het zelf reparen of onderhouden</span> van uw fiets?</p>
+            <p>Wenst u liver <span class="red">raad bij het zelf reparen of onderhouden</span> van uw fiets? </p>
           </div>          
         </div>
-        <div id="racefietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="racefietsen-koga-miyata" class="bike-block">
+          <h3>Koga Miyata</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/race/koga race tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
-            <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand koga-miyata">Meer van Koga Miyata <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="racefietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="racefietsen-ridley" class="bike-block">
+          <h3>Ridley</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/race/ridley race tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand ridley">Meer van Ridley <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
         <div class="bike-block desktop-img top-right-corner visible-lg pull-right">
           <img src="images/desktop/onderhoud/onderhoud race desktop.png">
         </div>
-        <div id="racefietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="racefietsen-stevens" class="bike-block">
+          <h3>Stevens</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/race/stevens race tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand stevens">Meer van Stevens <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
         <div id="racefietsen-trek" class="bike-block">
           <h3>Trek</h3>
@@ -172,346 +176,434 @@
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand trek">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
 
         <div class="clearfix"></div>
       </div>
 
       <div id="mountbikes" class="page type-bike">
-        <h2 class="type-head visible-lg">Mountbikes</h2>
+        <h2 class="type-head">Mountbikes</h2>
         <div class="bike-block descr">
           <div class="description left-line">
             <p>Wenst u liver <span class="red">raad bij het zelf reparen of onderhouden</span> van uw fiets?</p>
           </div>          
         </div>
-        <div id="mountbikes-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="mountbikes-koga-miyata" class="bike-block">
+          <h3>Koga Miyata</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/mountain/koga mountain tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand koga-miyata">Meer van Koga Miyata <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="mountbikes-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="mountbikes-stevens" class="bike-block">
+          <h3>Stevens</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/mountain/stevens mountain tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand stevens">Meer van Stevens <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div class="bike-block desktop-img top-left-corner visible-lg">
+        <div class="bike-block desktop-img top-left-corner">
           <img src="images/desktop/onderhoud/onderhoud mountain desktop.png">
         </div>
-        <div id="mountbikes-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="mountbikes-ridley" class="bike-block">
+          <h3>Ridley</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/mountain/ridley mountain tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand ridley">Meer van Ridley <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
         <div id="mountbikes-trek" class="bike-block">
           <h3>Trek</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/mountain/trek mountain tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand trek">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
 
         <div class="clearfix"></div>
       </div>
 
       <div id="stadsfietsen" class="page type-bike">
-        <h2 class="type-head visible-lg">Stadsfietsen</h2>
+        <h2 class="type-head">Stadsfietsen</h2>
         <div class="bike-block descr pull-right">
           <div class="description right-line">
             <p>Geen probleem. <br><span class="red">Wij geve service op uw maat.</span><p>
           </div>          
         </div>
-        <div id="stadsfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="stadsfietsen-batavus" class="bike-block">
+          <h3>Batavus</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/stad/batavus stad tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand batavus">Meer van Batavus <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="stadsfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="stadsfietsen-koga-miyata" class="bike-block">
+          <h3>Koga Miyata</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/stad/koga stad tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand koga-miyata">Meer van Koga Miyata <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="stadsfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="stadsfietsen-stevens" class="bike-block">
+          <h3>Stevens</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/stad/stevens stad tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand stevens">Meer van Stevens <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
         <div id="stadsfietsen-trek" class="bike-block">
           <h3>Trek</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/stad/trek stad tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand trek">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div class="bike-block desktop-img top-right-corner pull-right visible-lg">
+        <div class="bike-block desktop-img top-right-corner pull-right">
           <img src="images/desktop/onderhoud/onderhoud stad desktop.png">
         </div>
         <div class="clearfix"></div>
       </div>
 
-      <div id="elektrische_fietsen" class="page type-bike">
-        <h2 class="type-head visible-lg">Elektrische fietsen</h2>
+      <div id="elektrische-fietsen" class="page type-bike">
+        <h2 class="type-head">Elektrische fietsen</h2>
         <div class="bike-block descr">
           <div class="description left-line">
             <p>Vleugles is de elektrische fietsspecialist uit de regio.<p>
           </div>          
         </div>
-        <div id="elektrische_fietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="elektrische-fietsen-batavus" class="bike-block">
+          <h3>Batavus</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/elektrisch/batavus elek tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand batavus">Meer van Batavus <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="elektrische_fietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="elektrische-fietsen-koga-miyata" class="bike-block">
+          <h3>Koga Miyata</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/elektrisch/koga elek tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand koga-miyata">Meer van Koga Miyata <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div class="bike-block desktop-img top-left-corner visible-lg">
+        <div class="bike-block desktop-img top-left-corner">
           <img src="images/desktop/onderhoud/onderhoud elek desktop.png">
         </div>
-        <div id="elektrische_fietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="elektrische-fietsen-stevens" class="bike-block">
+          <h3>Stevens</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/elektrisch/stevens elek tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand stevens">Meer van Stevens <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="elektrische_fietsen-trek" class="bike-block">
+        <div id="elektrische-fietsen-trek" class="bike-block">
           <h3>Trek</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/elektrisch/trek elek tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand trek">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
 
         <div class="clearfix"></div>
       </div>
 
       <div id="kinderfietsen" class="page type-bike">
-        <h2 class="type-head visible-lg">Kinderfietsen</h2>
+        <h2 class="type-head">Kinderfietsen</h2>
         <div class="bike-block descr pull-right">
           <div class="description right-line">
             <p>Geen scherpe randen, wel stevige onderdelen, optimale veiligheid en zichtbaarheid voor uw kind.<p>
           </div>          
         </div>
-        <div id="kinderfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="kinderfietsen-batavus" class="bike-block">
+          <h3>Batavus</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/kind/batavus kind tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <a href="javascript:void(0)" class="link-canvas blue brand batavus">Meer van Batavus <i class="fa fa-external-link"></i></a>
+          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+        </div>
+        <div id="kinderfietsen-bfk" class="bike-block">
+          <h3>BFK</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/kind/bfk kind tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+          <a href="javascript:void(0)" class="link-canvas blue brand bfk">Meer van BFK <i class="fa fa-external-link"></i></a>
+          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+        </div>
+        <div id="kinderfietsen-stevens" class="bike-block">
+          <h3>Stevens</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/kind/stevens kind tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+          <a href="javascript:void(0)" class="link-canvas blue brand stevens">Meer van Stevens <i class="fa fa-external-link"></i></a>
           <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
         <div id="kinderfietsen-trek" class="bike-block">
           <h3>Trek</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/kind/trek kind tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
+          <a href="javascript:void(0)" class="link-canvas blue brand trek">Meer van Trek <i class="fa fa-external-link"></i></a>
           <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
-        <div id="kinderfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
-          <div class="line"></div>
-          <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
-          </div>
-          <div class="text-content">
-            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
-            <p class="red">levenslange garantie op alle kaders</p>
-          </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
-        </div>
-        <div id="kinderfietsen-trek" class="bike-block">
-          <h3>Trek</h3>
-          <div class="line"></div>
-          <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
-          </div>
-          <div class="text-content">
-            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
-            <p class="red">levenslange garantie op alle kaders</p>
-          </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
-        </div>
-        <div class="bike-block desktop-img top-right-corner pull-right visible-lg">
+        <div class="bike-block desktop-img top-right-corner pull-right">
           <img src="images/desktop/onderhoud/onderhoud kind desktop.png">
         </div>
         <div class="clearfix"></div>
-      </div>
-
-      <div id="hometrainers" class="page type-bike">
-        <h2 class="type-head visible-lg">Hometrainers</h2>
+         <div id="hometrainers" class="page type-bike">
+        <h2 class="type-head">Hometrainers</h2>
         <div class="bike-block descr">
           <div class="description left-line">
             <p>Uw missie: <br>meer training, <br>meer fitness, <br>meer van het leven.<p>
           </div>          
         </div>
-        <div id="hometrainers-trek" class="bike-block">
-          <h3>Trek</h3>
+        <div id="hometrainers-kettler" class="bike-block">
+          <h3>Kettler</h3>
           <div class="line"></div>
           <div class="preview">
-            <img src="images/tablet/race/trek race tablet.png">            
+            <img src="images/tablet/trainer/kettler trainer tablet.png">            
           </div>
           <div class="text-content">
             <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
-          <a href="javascript:void(0)" class="link-canvas blue">Meer van Trek <i class="fa fa-external-link"></i></a>
-          <div class="visible-lg text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
+          <a href="javascript:void(0)" class="link-canvas blue brand kettler">Meer van Kettler <i class="fa fa-external-link"></i></a>
+          <div class="text-center byke-types">Racefietsen, Mountbikes, Stadsfietsen, Elektrische fietsen, Kinderfietsen</div>
         </div>
 
         <div class="clearfix"></div>
       </div>
 
+     
       <div id="mark" class="page">
-        <div class="text-content">
-          <h2 class="red">Merken</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+          <h2 class="type-head">Merken</h2>
+          <div class="marks-bike">
+            <h3 class="bg-blue">Fietsen<a href="#" class="icon-link blue"><i class="fa fa-share"></i></a></h3>
+            <div class="mark-items">
+              <a href="javascript:void(0)" class="mark-item brand batavus">Batavus</a>
+              <a href="javascript:void(0)" class="mark-item brand bfk">BFK</a>
+              <a href="javascript:void(0)" class="mark-item brand kettler">Kettler</a>
+              <a href="javascript:void(0)" class="mark-item brand koga-miyata">Koga Miyata</a>
+              <a href="javascript:void(0)" class="mark-item brand ridley">Ridley</a>
+              <a href="javascript:void(0)" class="mark-item brand stevens">Stevens</a>
+              <a href="javascript:void(0)" class="mark-item brand trek">Trek</a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          
+          <div class="accessoires-bike red-font">
+            <h3 class="bg-red">Accessoires<a href="#" class="icon-link blue" target="_blank"><i class="fa fa-external-link"></i></a></h3>
+            <div class="mark-items">
+              <a href="#" class="mark-item" target="_blank">Agu</a>
+              <a href="#" class="mark-item" target="_blank">Basil</a>
+              <a href="#" class="mark-item" target="_blank">Bell</a>
+              <a href="#" class="mark-item" target="_blank">Bontrager</a>
+              <a href="#" class="mark-item" target="_blank">Casco</a>
+              <a href="#" class="mark-item" target="_blank">Chiba</a>
+              <a href="#" class="mark-item" target="_blank">Giro</a>
+              <a href="#" class="mark-item" target="_blank">Hamax</a>
+              <a href="#" class="mark-item" target="_blank">Melon</a>
+              <a href="#" class="mark-item" target="_blank">Pro</a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          
+          <div class="onderdelen-bike red-font">
+            <h3 class="bg-red">Onderdelen<a href="#" class="icon-link blue" target="_blank"><i class="fa fa-external-link"></i></a></h3>
+            <div class="mark-items">
+              <a href="#" class="mark-item" target="_blank">Bontrager</a>
+              <a href="#" class="mark-item" target="_blank">Campagnolo</a>
+              <a href="#" class="mark-item" target="_blank">Cordo</a>
+              <a href="#" class="mark-item" target="_blank">Fox</a>
+              <a href="#" class="mark-item" target="_blank">Michelin</a>
+              <a href="#" class="mark-item" target="_blank">Shimano</a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
       </div>
-      <div id="services" class="page">
-        <div class="text-content">
-          <h2 class="red">Diensten</h2>
-          <p>Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div id="services" class="page type-bike">
+        <h2 class="type-head">Diensten</h2>
+        <div class="bike-block descr pull-right">
+          <div class="description right-line">
+            <p>Onze technicus is op de hoogte van de nieuwste ontwikkelingen, dankzij <span class="red">regelmatige bijscholingen.</span><p>
+          </div>          
         </div>
+        <div class="bike-block">
+          <h3>Bodyscan</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/diensten/bodyscan tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+        </div>
+        <div class="bike-block">
+          <h3>Seizoensonderhoud</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/diensten/seizoensonderhoud tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+        </div>
+        <div class="bike-block">
+          <h3>Onderhoud geveerde vorken</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/diensten/vorken tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+        </div>
+        <div class="bike-block">
+          <h3>Advies bij zelf onderhoud</h3>
+          <div class="line"></div>
+          <div class="preview">
+            <img src="images/tablet/diensten/zelfonderhoud tablet.png">            
+          </div>
+          <div class="text-content">
+            <p>Het volledige assortiment van uw 1ste instap racefiets tot de exacte kopie van <span class="blue">Fabian Cancellara</span>'s Ronde van Vlaanderen winnaarsfiets!</p>
+            <p class="red">levenslange garantie op alle kaders</p>
+          </div>
+        </div>
+        <div class="bike-block desktop-img top-right-corner pull-right">
+          <img src="images/desktop/onderhoud/onderhoud diensten desktop.png">
+        </div>
+        <div class="clearfix"></div>
       </div>
+
       <div id="news" class="page">
-        <h2 class="type-head news-head visible-lg">Nieuws</h2>
+        <h2 class="type-headvisible-lg">Nieuws</h2>
         <div class="news-block">
           <div class="news-preview">
             <img src="images/desktop/nieuws/nieuws1 desktop.png">
             <div class="discount">gratis</div>
           </div>
-          <p>Excepteur sint occaecat cupidatat non
-          proident, suntco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. </p>
+          <p>Kom nnar onze <span class="red">opendeurdag op zaterdag 14 juni</span> en maak kennis met ons uitgebreid gamma!</p>
+          <p class="small blue">Bij aankoop van een Racefiets, gratis <span class="red">handschoenen van Chiba!</span></p>
         </div>
+        <div class="news-block">
+          <div class="news-preview">
+            <img src="images/desktop/nieuws/nieuws2 desktop.png">
+            <div class="discount">- 20%</div>
+          </div>
+          <p>Zomerpromotie:<br>
+          20 % korting op alle <span class="red">elektrishe fietsen!</span> Aanbod deldig op <span class="red">14 en 15 juni</span> 2014</p>
+        </div>
+        <div class="clearfix"></div>
       </div>
       <div id="contact" class="page">
         <div class="text-content">
           <h2 class="red">Contact</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.  Excepteur sint occaecat cupidatat non
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-      
+
     </div>
     <!-- /.container -->
   
