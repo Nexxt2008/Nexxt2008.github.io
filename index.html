@@ -8,7 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
   <link href="css/font-awesome.min.css" rel="stylesheet">
   
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="css/jquery.sidr.light.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/magnific-popup.css" rel="stylesheet">
@@ -58,6 +58,7 @@
           <li><a class="main-link" href="#contact">Contact</a></li>
           <!-- <li class="hidden-lg side-mail-link"><a href="mailto:fietsspecaalzaak@skynet.be">Mail ons</a></li> -->
         </ul>
+        <div class="clearfix"></div>
               
       </div>
     </div>
@@ -67,7 +68,7 @@
   <div id="page-content">
     <div class="container" >
       <div class="page-content-overlay"></div>
-     <div id="home" class="page">
+      <div id="home" class="page">
         <div class="content-logo">
           <div class="logo-line"></div>
           <img src="images/tablet/logo1 tablet.png">
@@ -79,9 +80,9 @@
             <div class="link-news"><a href="#news">Nieuws</a></div>
           </div>
         </div>
-        <div class="contacts">
-          <div class="contact-block">
-            <h3 class="time-head">Openingsuren</h3>
+        <div class="home-contacts">
+          <div class="home-contact-block clock">
+            <h3 class="time-head"><img src="images/clock.png">Openingsuren</h3>
             <p>Di en Do: 
               10:00 - 12:00<br>
               13:15 - 18:30
@@ -95,8 +96,8 @@
             </p>
             <p class="red">zo en ma: gesloten</p>
           </div>
-          <div class="contact-block">
-            <h3 class="contact-head">Contact</h3>
+          <div class="home-contact-block">
+            <h3 class="home-contact-head">Contact</h3>
             <p>
               Langestraat 80<br>
               3111 Wezemaal
@@ -104,7 +105,7 @@
             <p>
               016/58 08 16
             </p>
-            <a href="mailto:fietsspecaalzaak@skynet.be" class="contact-mail">fietsspecaalzaak@skynet.be</a>
+            <a href="mailto:fietsspecaalzaak@skynet.be" class="home-contact-mail">fietsspecaalzaak@skynet.be</a>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -443,7 +444,9 @@
           <img src="images/desktop/onderhoud/onderhoud kind desktop.png">
         </div>
         <div class="clearfix"></div>
-         <div id="hometrainers" class="page type-bike">
+      </div>
+
+      <div id="hometrainers" class="page type-bike">
         <h2 class="type-head">Hometrainers</h2>
         <div class="bike-block descr">
           <div class="description left-line">
@@ -466,11 +469,10 @@
 
         <div class="clearfix"></div>
       </div>
-
      
       <div id="mark" class="page">
           <h2 class="type-head">Merken</h2>
-          <div class="marks-bike">
+          <div class="marks-bike" id="merken-fietsen">
             <h3 class="bg-blue">Fietsen<a href="#" class="icon-link blue"><i class="fa fa-share"></i></a></h3>
             <div class="mark-items">
               <a href="javascript:void(0)" class="mark-item brand batavus">Batavus</a>
@@ -484,7 +486,7 @@
             </div>
           </div>
           
-          <div class="accessoires-bike red-font">
+          <div class="accessoires-bike red-font" id="merken-accessoires">
             <h3 class="bg-red">Accessoires<a href="#" class="icon-link blue" target="_blank"><i class="fa fa-external-link"></i></a></h3>
             <div class="mark-items">
               <a href="#" class="mark-item" target="_blank">Agu</a>
@@ -501,7 +503,7 @@
             </div>
           </div>
           
-          <div class="onderdelen-bike red-font">
+          <div class="onderdelen-bike red-font" id="merken-onderdelen">
             <h3 class="bg-red">Onderdelen<a href="#" class="icon-link blue" target="_blank"><i class="fa fa-external-link"></i></a></h3>
             <div class="mark-items">
               <a href="#" class="mark-item" target="_blank">Bontrager</a>
@@ -522,7 +524,7 @@
             <p>Onze technicus is op de hoogte van de nieuwste ontwikkelingen, dankzij <span class="red">regelmatige bijscholingen.</span><p>
           </div>          
         </div>
-        <div class="bike-block">
+        <div class="bike-block" id="diensten-bodyscan">
           <h3>Bodyscan</h3>
           <div class="line"></div>
           <div class="preview">
@@ -533,7 +535,7 @@
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
         </div>
-        <div class="bike-block">
+        <div class="bike-block" id="diensten-seizoensonderhoud">
           <h3>Seizoensonderhoud</h3>
           <div class="line"></div>
           <div class="preview">
@@ -544,7 +546,7 @@
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
         </div>
-        <div class="bike-block">
+        <div class="bike-block" id="diensten-onderhud">
           <h3>Onderhoud geveerde vorken</h3>
           <div class="line"></div>
           <div class="preview">
@@ -555,7 +557,7 @@
             <p class="red">levenslange garantie op alle kaders</p>
           </div>
         </div>
-        <div class="bike-block">
+        <div class="bike-block" id="diensten-advies">
           <h3>Advies bij zelf onderhoud</h3>
           <div class="line"></div>
           <div class="preview">
@@ -573,8 +575,8 @@
       </div>
 
       <div id="news" class="page">
-        <h2 class="type-headvisible-lg">Nieuws</h2>
-        <div class="news-block">
+        <h2 class="type-head visible-lg">Nieuws</h2>
+        <div class="news-block" id="nieuws-opendeurdagen">
           <div class="news-preview">
             <img src="images/desktop/nieuws/nieuws1 desktop.png">
             <div class="discount">gratis</div>
@@ -582,7 +584,7 @@
           <p>Kom nnar onze <span class="red">opendeurdag op zaterdag 14 juni</span> en maak kennis met ons uitgebreid gamma!</p>
           <p class="small blue">Bij aankoop van een Racefiets, gratis <span class="red">handschoenen van Chiba!</span></p>
         </div>
-        <div class="news-block">
+        <div class="news-block last" id="nieuws-opendeurdagen">
           <div class="news-preview">
             <img src="images/desktop/nieuws/nieuws2 desktop.png">
             <div class="discount">- 20%</div>
@@ -592,15 +594,101 @@
         </div>
         <div class="clearfix"></div>
       </div>
+
       <div id="contact" class="page">
-        <div class="text-content">
-          <h2 class="red">Contact</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="type-head visible-lg">Contact</h2>
+        <div class="contact-bg">
+          <img src="images/desktop/fam desktop.png" alt="" />
+        </div>
+        <div class="contacts">
+          <div class="contact-block address" id="adres">
+            <h3>Contact</h3>
+            <p>
+              Langestraat 80<br>
+              3111 Wezemaal
+            </p>
+            <p class="phone">
+              016/58 08 16
+              <img src="images/map-icon.png" class="map-icon" alt="">
+            </p>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5026.787469203678!2d4.7503213!3d50.95342420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15dca3401e101%3A0x1414d9526a00cc02!2sLangestraat+80!5e0!3m2!1sru!2s!4v1403008139868" width="400" height="300" frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+          <div class="white-line hidden-md hidden-lg"></div>
+          <div class="contact-block email" id="email">
+            <h3>Email</h3>
+            <p><a href="mailto:fietsspecaalzaak@skynet.be" class="contact-mail">fietsspecaalzaak@skynet.be</a></p>
+            <form action="#" class="contact-form" method="post">
+              <input type="text" name="name" placeholder="Naam">
+              <input type="email" name="email" placeholder="Email">
+              <textarea name="message" cols="6" placeholder="Bericht"></textarea>
+              <input type="submit" value="Verzenden">
+            </form>
+          </div>
+          <div class="white-line hidden-md hidden-lg"></div>
+          <div class="contact-block clock" id="openingsuren">
+            <h3>Openingsuren</h3>
+            <p>Di en Do: 
+              10:00 - 12:00<br>
+              13:15 - 18:30
+            </p><br>
+            <p>Wo en Vr: 13:15 - 18:30</p>
+            <br>
+            <p>za: 
+              09:00 - 12:00<br>
+              13:00 - 16:00
+            </p><br>
+            <p class="red">zo en ma: gesloten</p>
+          </div>
+          <div class="clearfix"></div>
+          <div class="white-line last"></div>
+          <div class="footer-menu">
+            <div class="menu-block">
+              <h4>Fietsen</h4>
+              <ul>
+                <li><a href="#racefietsen">Racefietsen</a></li>
+                <li><a href="#mountbikes">Mountbikes</a></li>
+                <li><a href="#stadsfietsen">Stadsfietsen</a></li>
+                <li><a href="#elektrische_fietsen">Elektrische fietsen</a></li>
+                <li><a href="#kinderfietsen">Kinderfietsen</a></li>
+                <li><a href="#hometrainers">Hometrainers</a></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h4>Merken</h4>
+              <ul>
+                <li><a href="#merken-fietsen">Fietsen</a></li>
+                <li><a href="#merken-onderdelen">Onderdelen</a></li>
+                <li><a href="#merken-accessoires">Accessoires</a></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h4>Diensten</h4>
+              <ul>
+                <li><a href="#diensten-onderhud">Onderhud geveerde vorken</a></li>
+                <li><a href="#diensten-bodyscan">Bodyscan</a></li>
+                <li><a href="#diensten-seizoensonderhoud">Seizoensonderhoud</a></li>
+                <li><a href="#diensten-advies">Advies</a></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h4>Nieuws</h4>
+              <ul>
+                <li><a href="#nieuws-opendeurdagen">Opendeurdagen</a></li>
+                <li><a href="#nieuws-promoties">Promoties</a></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="#adres">Adres</a></li>
+                <li><a href="#openingsuren">Openingsuren</a></li>
+                <li><a href="#email">Email</a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
         </div>
       </div>
 

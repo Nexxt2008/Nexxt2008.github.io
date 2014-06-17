@@ -38,7 +38,6 @@ body.sidr-open .overlay{
 }
 #page-content {
     padding: 57px 0 0 0;
-    /*min-width: 610px;*/
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -49,7 +48,6 @@ body.sidr-open .overlay{
 
 .container {
     padding: 0;
-    /*min-width: 610px;*/
     width: 100%;
 }
 
@@ -311,76 +309,74 @@ body.sidr-open .overlay{
     width: 200px;
 }
 
-.contact-block {
+.home-contact-block {
     float: left;
     width: 50%;
     min-height: 200px;
 }
 
-.contacts {
+.home-contacts {
     margin-top: 20px;
     background: #fff;
 }
 
-.contact-block p, .contact-block h3, .contact-block a {
+.home-contact-block p, .home-contact-block h3, .home-contact-block a {
     text-align: left;
     padding-left: 12.5rem;
 }
 
-.contact-block:first-child p, .contact-block:first-child h3, .contact-block:first-child a {
+.home-contact-block:first-child p, .home-contact-block:first-child h3, .home-contact-block:first-child a {
     text-align: right;
     padding-left: 0;
 
 }
 
-.contact-block{
-}
-
-.contact-block:first-child{
-    padding-right: 40px;
-}
-
-.contact-block p{
+.home-contact-block p{
     color: #333366;
     font-size: 0.7em;
 }
 
-.contact-block h3 {
+.home-contact-block h3 {
     color: #0b0433;
     font-size: 3.3rem;
 }
 
-.contact-block p.red{
+.home-contact-block p.red{
     color: #cc3355;
     padding-right: 24px;
 }
-.contact-block p, .contact-mail{
+.home-contact-block p, .home-contact-mail{
     font-size: 2rem;
 }
 
-
-.contact-mail{
+.home-contact-block.clock{
+    padding-right: 1em;
+}
+.home-contact-mail{
     color: #333366;
     background: url(../images/mail.png) left center no-repeat;
-    background-size: contain;
-    font-size: 0.7em;
+    background-size: 7rem;
+    font-size: 2rem;
     padding: 15px 0 15px 75px;
     display: inline-block;
     margin-top: 30px;
 }
 
-.time-head{
-    background: url(../images/clock.png) left center no-repeat;
-    background-size: contain;
-    margin: 0 0 0 75px;
-    padding: 10px 0 20px;
+.home-contact-block.clock h3 img {
+    width: 5rem;    
+    margin-right: 1em;
+}
+.home-contact-block.clock h3{
+    margin: 0;
+    margin-left: 0;
+    padding: 0.5em 0 1em;
 }
 
-.contact-head{
+.home-contact-head{
     background: url(../images/badge.png) 10px center no-repeat;
-    background-size: contain;
+    background-size: 5rem;
     margin: 0;
-    padding: 10px 0 20px 75px;
+    padding: 0.5em 0 1em;
 }
 
 .text-content h2, .text-content p{
@@ -431,7 +427,7 @@ h2.type-head,
     background: none;
 }
 .bike-block .description p{
-    font-size: 8rem;
+    font-size: 4.6rem;
     line-height: 1.2em;
     padding: 0 100px 0 40px;
 }
@@ -518,6 +514,9 @@ h2.type-head,
     left: 0;
     top: 50%;
 }
+.news-block.last{
+    margin-bottom: 0;
+}
 
 /* Marks */
 /*---------------------------------------------------*/
@@ -597,6 +596,147 @@ a.mark-item{
     position: absolute;
     bottom: 0;
 }
+
+/* Contact */
+/*---------------------------------------------------*/
+.page#contact{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.contact-bg img{
+    max-width: 100%
+}
+.contacts{
+    background: #e5e5e5;
+    padding: 5% 10%;
+}
+
+.contact-block{
+    width: 100%;
+    float: none;
+}
+.contact-block.address h3 {
+    background: url(../images/badge.png) 0 0 no-repeat;
+    background-size: 6rem;
+}
+.contact-block.email h3 {
+    background: url(../images/mail.png) 0 0 no-repeat;
+    background-size: 10rem;
+}
+.contact-block.clock h3 {
+    background: url(../images/clock.png) 0 0 no-repeat;
+    background-size: 10rem;
+    padding: 3.5em 0 1em; 
+}
+.contact-block h3 {
+    margin: 0;
+    padding: 3em 0 1em; 
+    font-size: 4rem;
+    color: #0b0433;
+}
+.contact-block.clock p {
+    display: inline-block;
+    text-align: right;
+    min-width: 30rem;
+}
+.contact-block.clock p.red{
+    text-align: left;
+}
+
+.contact-block p {
+    font-size: 3rem;
+    color: #333366;
+    margin-bottom: 1em;
+}
+.contact-block p a{
+    color: #333366;    
+}
+
+.contact-block.address .phone{
+    position: relative;
+}
+.map-icon {
+    width: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.contact-block.address iframe{
+    width: 100%;
+    height: 75rem;
+}
+.contact-block.address .map{
+    height: 76rem;
+    border-radius: 7px;
+    border: 0.5rem solid #fff;
+    width: 100%;
+    margin: 2em 0 3em;
+}
+.white-line{
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 2em;
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    background: transparent;
+    border: 0.5rem solid #fff;
+    color: #888;
+    font-size: 3rem;
+    height: 9rem;
+    margin-bottom: 1.3em; 
+    padding: 0 0.8em;
+
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    border: 0.5rem solid #999;
+    outline: none;
+}
+.contact-form input[type="submit"]{
+    width: auto;
+    margin-bottom: 2em;
+}
+.contact-form textarea{
+    padding: 0.8em;
+    height: 30rem;
+}
+
+.footer-menu .menu-block{
+    width: 23.7rem;
+    min-height: 30rem;
+    float: left;
+}
+.footer-menu h4 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #bb0922;
+    margin-bottom: 1em;
+
+}
+.footer-menu ul {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-menu ul li a{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #888;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+.footer-menu ul li a:hover{
+    color: #bb0922;
+}
+.white-line.last {
+    margin-bottom: 3em;
+}
+
 /* Media queries */
 /*---------------------------------------------------*/
 @media (min-width:380px) { 
@@ -697,20 +837,13 @@ a.mark-item{
     .sidr-class-side-logo, .sidr-class-side-logo img{
         height: 106px;
     }
-
-    .time-head{
-        margin: 0 0 0 265px;
-    }
-    .time-head {
-        margin: 0 0 0 185px;
-    }
-    .contact-block p, .contact-mail{
+    .home-contact-block p, .home-contact-mail{
         font-size: 1.3em;
     }
-    .contact-block p.red{
+    .home-contact-block p.red{
         padding-right: 44px;
     }
-    .contact-mail{
+    .home-contact-mail{
         margin-top: 60px;
     }
 
@@ -773,16 +906,16 @@ a.mark-item{
     .navbar-fixed-top .container{
         margin: 0 auto;
         max-width: 1280px;
+        position: relative;
     }
     .navbar-fixed-top {
         border-bottom: 5px solid #f2f2f2;
     }
-
     .nav.navbar-nav {
         display: block;
         position: absolute;
         bottom: 0;
-        left: 45%;
+        right: 13%;
     }
 
     .navbar-header {
@@ -812,28 +945,25 @@ a.mark-item{
         background: #fff;
     }
 
-    .contacts {
+    .home-contacts {
         margin-top: 40px;
         background: #f2f2f2;
         padding: 20px 0;
     }
-    .contact-block:first-child{
+    .home-contact-block:first-child{
         padding-right: 115px;
     }
-    .time-head{
-        margin: 0 0 0 235px;
-    }
-    .contact-block p, .contact-block h3, .contact-block a{
+    .home-contact-block p, .home-contact-block h3, .home-contact-block a{
         padding-left: 24.5rem;
     }
-    .contact-block p.red{
+    .home-contact-block p.red{
         padding-right: 44px;
     }
-    .contact-mail{
+    .home-contact-mail{
         margin-top: 45px;
         background-position: 150px center;
     }
-    .contact-head{
+    .home-contact-head{
         background-position: 150px center;
     }
 
@@ -930,8 +1060,8 @@ a.mark-item{
         display: block;
     }
     .page.type-bike {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     #news .clearfix{
@@ -973,9 +1103,90 @@ a.mark-item{
         padding-right: 40%;
         font-size: 2.9rem;
     }
+
+    /*Contact page*/
+
+    .contacts{
+        padding: 6% 0 0;
+    }
+    .contact-block{
+        float: left;
+    }
+    .contact-block.address{
+        width: 30%;
+        margin-left: 6%;
+    }
+    .contact-block.email{
+        width: 27%;
+        margin-left: 6%;
+    }
+    .contact-block.clock{
+        width: 20%;
+        margin-left: 7%;
+
+    }
+    .contact-block h3{
+        font-size: 2.8rem;
+        padding-top: 10rem;
+    }
+    .contact-block p{
+        font-size: 1.8rem;
+    }
+    .contact-block.clock p{
+        min-width: 18rem;
+    }
+    .contact-block.address h3 {
+        background-size: auto 7rem;
+    }
+    .contact-block.email h3 {
+        background-size: auto 5rem;
+        background-position: 0 2rem;
+    }
+    .contact-block.clock h3 {
+        background-size: auto 7rem;
+    }
+    .contact-block.address .phone {
+        margin-bottom: 11rem;
+    }
+    .contact-block.address .map-icon {
+        width: 5rem;
+        right: auto;
+        left: 0;
+        top: 6.4rem;
+    }
+    .contact-block.address iframe {
+        height: 26.5rem;
+    }
+    .contact-block.address .map{
+        height: 27.5rem;
+    }
+    .contact-block input{
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+    .contact-block textarea{
+        font-size: 1.5rem;
+        height: 21rem;
+    }
+    .contact-form{
+        margin-top: 10.7rem;
+    }
+    .white-line.last {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-menu {
+        padding: 3% 6%;
+    }
+    .footer-menu .menu-block{
+        width: 22.5rem;
+        min-height: 37rem;
+        float: left;
+    }
 }
 @media (min-width: 1280px) {
-    h2.type-head {
+    .page.type-bike h2 {
         width: 1280px;
         margin-left: -50px;
     }

@@ -164,7 +164,7 @@ $(document).ready(function () {
   // Marks
     items_wrap = $('#mark .mark-items').outerWidth(true);
     item = $('#mark .mark-item').outerWidth(true);
-    columns = Math.floor(items_wrap/item);
+    columns = (Math.floor(items_wrap/item) > 4) ? 4 : Math.floor(items_wrap/item);
     w_columns = columns * item;
     padding = (Math.floor((items_wrap - w_columns) / 2) - 1);
     $('#mark .mark-items').css('padding', '0 ' + padding + 'px');
