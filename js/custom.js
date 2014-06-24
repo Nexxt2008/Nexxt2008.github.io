@@ -25,7 +25,7 @@ $(document).ready(function () {
     source: function(name) {
       return '<div class="sidr-brand"><img src="images/x.png" class="close">' +
                 '<div class="brand-content">' +
-                  '<img src="images/desktop/logo\'s merken/bfk logo desktop.png">' +
+                  '<img src="images/desktop/logo\'s merken/BFK logo desktop.png">' +
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#kinderfietsen-bfk">Kinderfietsen</a></li>' +
@@ -43,7 +43,7 @@ $(document).ready(function () {
     source: function(name) {
       return '<div class="sidr-brand"><img src="images/x.png" class="close">' +
                 '<div class="brand-content">' +
-                  '<img src="images/desktop/logo\'s merken/kettler logo desktop.png">' +
+                  '<img src="images/desktop/logo\'s merken/Kettler logo desktop.png">' +
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#hometrainers-kettler">Hometrainers</a></li>' +
