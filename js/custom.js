@@ -224,27 +224,20 @@ $(document).ready(function () {
 
   // Scroll
   $('a[href*=#]').bind("click", function(e){
+    var anchor = ($(this).attr('data-scroll')) ? $(this).attr('data-scroll') : $(this).attr('href');
+    $('html, body').stop().animate({
+       scrollTop: $(anchor).offset().top - $('.navbar-fixed-top').height() + $('.navbar-header .sub-items').height()
+    }, 1000);
+    e.preventDefault();
+  });
+  $('.sub-items').on("click", 'a[href*=#]', function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
        scrollTop: $(anchor.attr('href')).offset().top - $('.navbar-fixed-top').height() + $('.navbar-header .sub-items').height()
     }, 1000);
     e.preventDefault();
   });
-  $('.sub-items').on("click", 'a[href*=#]', function(e){
-      var anchor = $(this);
-      $('html, body').stop().animate({
-         scrollTop: $(anchor.attr('href')).offset().top - $('.navbar-fixed-top').height() + $('.navbar-header .sub-items').height()
-      }, 1000);
-      e.preventDefault();
-  });
 
-  $('.sidr-class-dropdown-menu li a').click(function(){
-    if (!is_desktop()) {
-      var type_bike = $(this).text();
-      $('.navbar-header h2').text(type_bike);
-    };
-  });
-  
   // Cache selectors
   var lastId,
       topMenu = $("#slide-nav"),
