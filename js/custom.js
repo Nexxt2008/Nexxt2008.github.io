@@ -295,7 +295,7 @@ $(document).ready(function () {
     if (id != 'home')
       $('.navbar-header h2').text(id);
     else
-      $('.navbar-header h2').text('Welcom');
+      $('.navbar-header h2').text('Welkom');
 
     if (cur.articles.length > 0) {
       var submenu = '';
