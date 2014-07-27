@@ -87,7 +87,8 @@ body.sidr-open .overlay{
 
 }
 .navbar-fixed-top .sub-items a.active{
-    color: #bb0922;
+    color: #fff;
+    background: #c94055;
 
 }
 /* Navbar */
@@ -424,7 +425,7 @@ body.sidr-open .overlay{
 }
 
 .text-content h2, .text-content p{
-    font-size: 5.5rem;
+    font-size: 2.9rem;
     margin-bottom: 1.8em;
     color: #888;
 }
@@ -439,27 +440,31 @@ h2.type-head,
 }
 .preview img {
     width: 100%;
-    margin: 34px 0;
+    margin: 0 0 34px;
 }
 .bike-block {
     min-height: 200px;
+    padding-top: 60px;
+}
+#diensten .bike-block {
+    padding-top: 100px;
 }
 .bike-block .text-content{
     padding: 0 35px;
 }
 
 .bike-block .text-content p{
-    font-size: 4.6rem;
+    font-size: 2.9rem;
     color: #888;
     margin-bottom: 1em;
 }
 
 .bike-block .text-content p.red{
-    font-size: 4rem;
+    font-size: 2.9rem;
 }
 
 .bike-block a.link-canvas {
-    font-size: 4rem;
+    font-size: 2.9rem;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -474,7 +479,7 @@ h2.type-head,
     float: none !important;
 }
 .bike-block .description p{
-    font-size: 4.6rem;
+    font-size: 2.9rem;
     line-height: 1.2em;
     padding: 0 100px 0 40px;
 }
@@ -505,6 +510,15 @@ h2.type-head,
 }
 .text-center.byke-types{
     display: none;
+}
+.bike-block h3{
+    background: #f2f2f2;
+    color: #bb0922;
+    text-align: center;
+    font-size: 2.9rem;
+    line-height: 1.8em;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 /* News block */
 /*---------------------------------------------------*/
@@ -754,7 +768,7 @@ a.mark-item{
 }
 
 .footer-menu .menu-block{
-    width: 23.7rem;
+    width: 33.333%;
     min-height: 30rem;
     float: left;
 }
@@ -817,7 +831,7 @@ a.mark-item{
 @media (min-width: 768px) {
     html {font-size: 10px;}
     .home-bg .slogan, .home-bg .link-news {
-        font-size: 3.7rem;
+        font-size: 2.9rem;
     }
 
     .navbar {
@@ -902,7 +916,7 @@ a.mark-item{
     }
 
     .preview img {
-        margin: 80px 0;
+        margin: 0 0 80px;
     }
     .bike-block.descr{
         padding: 0;
@@ -910,7 +924,7 @@ a.mark-item{
         background: none;
     }
     .bike-block .description p{
-        font-size: 4em;
+        font-size: 2.9em;
         line-height: 1.2em;
         padding: 0 115px;
     }
@@ -1051,14 +1065,18 @@ a.mark-item{
         float: left;
         min-height: 528px;
     }
+    #diensten .bike-block {
+        padding-top: 14px;
+    }
     .bike-block .text-content p{
         font-size: 1.8rem;
     }
-
     .bike-block h3{
-        text-align: center;
-        margin-top: 0;
+        font-size: 24px;
+        line-height: 1.1em;
+        margin-bottom: 10px;
     }
+
     .bike-block .line{
         height: 1px;
         width: 100%;
@@ -1105,6 +1123,11 @@ a.mark-item{
     .bike-block .description{
         display: table-cell;
         vertical-align: middle;
+    }
+    .bike-block h3{
+        background: none;
+        color: #333;
+        margin-top: 0;
     }
     h2.type-head{
         background: #f2f2f2;
@@ -1243,6 +1266,7 @@ a.mark-item{
         min-height: 37rem;
         float: left;
     }
+
 }
 @media (min-width: 1280px) {
     .page.type-bike h2 {
