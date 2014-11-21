@@ -321,6 +321,7 @@ body.sidr-open .overlay{
     padding: 0.2em 0.7em;
     margin-top: 1em;
     display: inline-block;
+    margin-left: 3em;
 }
 .home-bg .link-news a {
     text-decoration: none;
