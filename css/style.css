@@ -532,9 +532,8 @@ h2.type-head,
     background: #fff;
     padding: 14px 0;
 }
-.news-block:not(:last-child){
-    margin-bottom: 20px;
-
+.news-block:nth-child(2n+1){
+    margin: 20px 0;
 }
 .news-block p{
     padding: 0 3rem;
@@ -1176,6 +1175,9 @@ a.mark-item{
     .news-block, .news-block p {
         font-size: 3.7rem;
         line-height: 1.2em;
+    }
+    .news-block.large-text, .news-block.large-text p {
+        font-size: 1.7rem;
     }
     .news-block p:not(.small) {
         margin-bottom: 0.8em;
