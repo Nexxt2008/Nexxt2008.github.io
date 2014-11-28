@@ -11,7 +11,7 @@ $(document).ready(function () {
                       '<li><a href="#stadsfietsen-batavus">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-batavus">Elektrische fietsen</a></li>' +
                       '<li><a href="#kinderfietsen-batavus">Kinderfietsen</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i>Batavus</a></li>' +
+                      '<li class="ext-link"><a href="http://www.batavus.be/" target="_blank"><i class="fa fa-external-link"></i>Batavus</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -29,7 +29,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#kinderfietsen-bfk">Kinderfietsen</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i>BFK</a></li>' +
+                      '<li class="ext-link"><a href="http://www.kinderfietsen.be/" target="_blank"><i class="fa fa-external-link"></i>BFK</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -47,7 +47,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#hometrainers-kettler">Hometrainers</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i>Kettler</a></li>' +
+                      '<li class="ext-link"><a href="http://be.kettler.net/" target="_blank"><i class="fa fa-external-link"></i>Kettler</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -68,7 +68,7 @@ $(document).ready(function () {
                       '<li><a href="#mountbikes-koga-miyata">Mountbikes</a></li>' +
                       '<li><a href="#stadsfietsen-koga-miyata">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-koga-miyata">Elektrische fietsen</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i> Koga Miyata</a></li>' +
+                      '<li class="ext-link"><a href="http://www.koga.com/" target="_blank"><i class="fa fa-external-link"></i> Koga Miyata</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -87,7 +87,7 @@ $(document).ready(function () {
                     '<ul>' +
                       '<li><a href="#racefietsen-ridley">Racefietsen</a></li>' +
                       '<li><a href="#mountbikes-ridley">Mountbikes</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i>Ridley</a></li>' +
+                      '<li class="ext-link"><a href="http://www.ridley-bikes.com/" target="_blank"><i class="fa fa-external-link"></i>Ridley</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -108,7 +108,7 @@ $(document).ready(function () {
                       '<li><a href="#mountbikes-stevens">Mountbikes</a></li>' +
                       '<li><a href="#stadsfietsen-stevens">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-stevens">Elektrische fietsen</a></li>' +
-                      '<li class="ext-link"><a href="#" target="_blank"><i class="fa fa-external-link"></i>Stevens</a></li>' +
+                      '<li class="ext-link"><a href="http://www.stevensbikes.de/" target="_blank"><i class="fa fa-external-link"></i>Stevens</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
@@ -130,7 +130,7 @@ $(document).ready(function () {
                       '<li><a href="#stadsfietsen-trek">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-trek">Elektrische fietsen</a></li>' +
                       '<li><a href="#kinderfietsen-trek">Kinderfietsen</a></li>' +
-                      '<li class="ext-link"><a href="http://www.trekbikes.com" target="_blank"><i class="fa fa-external-link"></i> www.trekbikes.com</a></li>' +
+                      '<li class="ext-link"><a href="http://www.trekbikes.com/" target="_blank"><i class="fa fa-external-link"></i> www.trekbikes.com</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
