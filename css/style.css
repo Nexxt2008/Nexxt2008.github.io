@@ -28,6 +28,9 @@ body.sidr-open .overlay{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.fb-container{
+    overflow: hidden;
+}
 .fb-follow {
     width: 100%;
     display: inline-block;
