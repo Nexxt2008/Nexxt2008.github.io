@@ -555,7 +555,9 @@ h2.type-head,
     width: 100%;
     height: auto;
 }
-
+.news-block a{
+    text-decoration: none;
+}
 .news-preview{
     position: relative;
     margin-bottom: 0.8em;

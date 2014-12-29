@@ -68,7 +68,7 @@ $(document).ready(function () {
                       '<li><a href="#mountbikes-koga-miyata">Mountbikes</a></li>' +
                       '<li><a href="#stadsfietsen-koga-miyata">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-koga-miyata">Elektrische fietsen</a></li>' +
-                      '<li class="ext-link"><a href="http://www.koga.com/" target="_blank"><i class="fa fa-external-link"></i> Koga Miyata</a></li>' +
+                      '<li class="ext-link"><a href="http://www.koga.com/" target="_blank"><i class="fa fa-external-link"></i> Koga</a></li>' +
                     '</ul>' +
                   '</div>' +
                 '</div>' +
