@@ -25,11 +25,15 @@ body.sidr-open .overlay{
 }
 
 .page{
-    margin-bottom: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+.fb-follow {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+    text-align: center;
+}
 .page#home{
     padding-top: 0;
 }
