@@ -65,7 +65,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#racefietsen-koga-miyata">Racefietsen</a></li>' +
-                      '<li><a href="#mountbikes-koga-miyata">Mountbikes</a></li>' +
+                      '<li><a href="#mountainbikes-koga-miyata">Mountainbikes</a></li>' +
                       '<li><a href="#stadsfietsen-koga-miyata">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-koga-miyata">Elektrische fietsen</a></li>' +
                       '<li class="ext-link"><a href="http://www.koga.com/" target="_blank"><i class="fa fa-external-link"></i> Koga</a></li>' +
@@ -86,7 +86,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#racefietsen-ridley">Racefietsen</a></li>' +
-                      '<li><a href="#mountbikes-ridley">Mountbikes</a></li>' +
+                      '<li><a href="#mountainbikes-ridley">Mountainbikes</a></li>' +
                       '<li class="ext-link"><a href="http://www.ridley-bikes.com/" target="_blank"><i class="fa fa-external-link"></i>Ridley</a></li>' +
                     '</ul>' +
                   '</div>' +
@@ -105,7 +105,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#racefietsen-stevens">Racefietsen</a></li>' +
-                      '<li><a href="#mountbikes-stevens">Mountbikes</a></li>' +
+                      '<li><a href="#mountainbikes-stevens">Mountainbikes</a></li>' +
                       '<li><a href="#stadsfietsen-stevens">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-stevens">Elektrische fietsen</a></li>' +
                       '<li class="ext-link"><a href="http://www.stevensbikes.de/" target="_blank"><i class="fa fa-external-link"></i>Stevens</a></li>' +
@@ -126,7 +126,7 @@ $(document).ready(function () {
                   '<div class="brand-menu">' +
                     '<ul>' +
                       '<li><a href="#racefietsen-trek">Racefietsen</a></li>' +
-                      '<li><a href="#mountbikes-trek">Mountbikes</a></li>' +
+                      '<li><a href="#mountainbikes-trek">Mountainbikes</a></li>' +
                       '<li><a href="#stadsfietsen-trek">Stadsfietsen</a></li>' +
                       '<li><a href="#elektrische-fietsen-trek">Elektrische fietsen</a></li>' +
                       '<li><a href="#kinderfietsen-trek">Kinderfietsen</a></li>' +
