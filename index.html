@@ -667,10 +667,10 @@ vorken gebeurt <span class="red"> in eigen atelier.</span></p>
           <div class="contact-block email" id="email">
             <h3>Email</h3>
             <p><a href="mailto:fietsspeciaalzaak@skynet.be" class="contact-mail">fietsspeciaalzaak@skynet.be</a></p>
-            <form action="#" class="contact-form" method="post">
-              <input type="text" name="name" placeholder="Naam">
-              <input type="email" name="email" placeholder="Email">
-              <textarea name="message" cols="6" placeholder="Bericht"></textarea>
+            <form action="sendmail.php" class="contact-form" method="post">
+              <input type="text" name="name" id="name" placeholder="Naam" required>
+              <input type="email" name="email" id="email" placeholder="Email" required>
+              <textarea name="message" cols="6" id="message" placeholder="Bericht" required></textarea>
               <input type="submit" value="Verzenden">
             </form>
           </div>

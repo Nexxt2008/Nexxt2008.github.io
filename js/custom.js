@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
 
   $('a.brand.batavus').sidr({
     name: 'batavus',
@@ -320,6 +320,24 @@ $(document).ready(function () {
         .parent().removeClass("active")
         .end().filter("[href=#"+id+"]").parent().addClass("active");
     }
+  });
+
+  var frm = $('.contact-form');
+  frm.submit(function (ev) {
+      $.ajax({
+          type: frm.attr('method'),
+          url: frm.attr('action'),
+          data: frm.serialize(),
+          success: function (data) {
+            frm.find("input#name, input#email, textarea").val("");
+            $( "<p class='success-message'>Message was sent!</p>" ).insertAfter("textarea#message");
+            setTimeout(function() {
+              $('.success-message').remove();
+            }, 2000);
+          }
+      });
+
+      ev.preventDefault();
   });
 
 });
