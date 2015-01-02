@@ -10,7 +10,7 @@ $headers = 'From: ' . $name . ' ' . $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-mail('nexxt2008@gmail.com', 'Contact form Vleugels', $message, $headers);
+mail('fietsspeciaalzaak@skynet.be', 'Contact form Vleugels', $message, $headers);
 
 exit();
 
